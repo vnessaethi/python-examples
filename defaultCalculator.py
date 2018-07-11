@@ -1,51 +1,51 @@
-print("\n******************* Python Calculator *******************")
+print("\n******************* Python Default Calculator *******************")
 
-# Variavel que armazena a escolha da operação
-print("\nOperações disponíveis:\n")
-print("\n1 - Soma")
-print("\n2 - Subtração")
-print("\n3 - Multiplicação")
-print("\n4 - Divisão\n")
+# Variable that stores the choice of operation
+print("\nAvailable operations:\n")
+print("\n1 - Sum")
+print("\n2 - Subtraction")
+print("\n3 - Multiplication")
+print("\n4 - Division\n")
 
-opcao = input("\nEscolha uma operação (1/2/3/4): ")
+option = input("\nChoice an operation (1/2/3/4): ")
 
-# Função de soma
-def soma():
-    primeiro = int(input("\nDigite o primeiro valor: "))
-    segundo = int(input("\nDigite o segundo valor: "))
-    soma = primeiro + segundo
-    print("\nA soma entre {0} e {1} é: ".format(primeiro,segundo), soma)
+# Functions of the sum
+def sumFunction():
+    first = int(input("\nType the first number: "))
+    second = int(input("\nType the second number: "))
+    sumResult = first + second
+    print("\nThe sum between {0} e {1} is: ".format(first,second), sumResult)
     return;
 
-def subtracao():
-    primeiro = int(input("\nDigite o primeiro valor: "))
-    segundo = int(input("\nDigite o segundo valor: "))
-    subtracao = primeiro - segundo
-    print("\nA subtração entre {0} e {1} é: ".format(primeiro,segundo), subtracao)
+def subtractionFunction():
+    first = int(input("\nType the first number: "))
+    second = int(input("\nType the second number: "))
+    subtractionResult = first - second
+    print("\nThe subtraction between {0} e {1} is: ".format(first,second), subtractioniResult)
     return;
 
-def multiplicacao():
-    primeiro = int(input("\nDigite o primeiro valor: "))
-    segundo = int(input("\nDigite o segundo valor: "))
-    multiplicacao = primeiro * segundo
-    print("\nA multiplicação entre {0} e {1} é: ".format(primeiro,segundo), multiplicacao)
+def multiplicationFunction():
+    first = int(input("\nType the first number: "))
+    second = int(input("\nType the second number: "))
+    multiplicationResult = first * second
+    print("\nThe multiplication between {0} e {1} is: ".format(first,second), multiplicationResult)
     return;
 
-def divisao():
-    primeiro = int(input("\nDigite o primeiro valor: "))
-    segundo = int(input("\nDigite o segundo valor: "))
-    divisao = primeiro / segundo
-    print("\nA divisão entre {0} e {1} é: ".format(primeiro,segundo), divisao)
+def divisionFunction():
+    first = int(input("\nType the first number: "))
+    second = int(input("\nType the second number: "))
+    division = first / second
+    print("\nThe division between {0} e {1} is: ".format(first,second), divisionResult)
     return;
 
-# Operação para validar a opção escolhida no input
-if opcao == '1':
-    soma()
-elif opcao == '2':
-    subtracao()
-elif opcao == '3':
-    multiplicacao()
-elif opcao == '4':
-    divisao()
+# Operation to validate the choosen option on input
+if option == '1':
+    sumFunction()
+elif option == '2':
+    subtractionFunction()
+elif option == '3':
+    multiplicationFunction()
+elif option == '4':
+    divisionFunction()
 else:
-    print("\nOpção inválida para as operações exibidas. Tente novamente!")
+    print("\nInvalid option for the operations displayed. Try again!")
